@@ -29,6 +29,16 @@ jobs:
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
+      - name: Set environment variable
+        env:
+          ASPNETCORE_ENVIRONMENT: Production
+        run: echo "ASPNETCORE_ENVIRONMENT set to $ASPNETCORE_ENVIRONMENT"
+
+      - name: Run EF Core Migrations
+        env:
+            ConnectionStrings__DefaultConnection: ${{ secrets.ConnectionStrings__DefaultConnection }}
+        run: dotnet ef database update --project CMS.Infrastructure.csproj --startup-project CMS.Presentation.csproj
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
@@ -65,4 +75,7 @@ jobs:
           app-name: 'cms-service'
           slot-name: 'Production'
           package: .
+          environment-variables: |
+            ASPNETCORE_ENVIRONMENT=Production
+            AZURE_TIMEOUT=300 # 5 minutes
           

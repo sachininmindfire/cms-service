@@ -13,13 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.Infrastructure", "CMS.I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.Tests", "CMS.Tests\CMS.Tests.csproj", "{D3B132C1-8303-4DCB-ABEE-6ED81EC9C119}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{EEF87FCA-FBA8-4D81-8DF4-6CC3F56E061A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\master_cms-service.yml = .github\workflows\master_cms-service.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6B1020BB-62AF-4EFD-83C5-85018C9645CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +44,8 @@ Global
 		{D3B132C1-8303-4DCB-ABEE-6ED81EC9C119}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3B132C1-8303-4DCB-ABEE-6ED81EC9C119}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3B132C1-8303-4DCB-ABEE-6ED81EC9C119}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
