@@ -63,6 +63,10 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
     .Replace("{CMS-DbUserName}", dbUsername)
     .Replace("{CMS-DbPassword}", dbPassword);
 
+
+Console.WriteLine($"connectionstring values for {builder.Environment.EnvironmentName}:");
+Console.WriteLine($"connectionString: {connectionString}");
+
 // Configure DbContext
 builder.Services.AddDbContext<CMSDbContext>(options =>
     options.UseSqlServer(connectionString));
