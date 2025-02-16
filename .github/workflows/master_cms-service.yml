@@ -29,6 +29,9 @@ jobs:
       - name: Add dotnet tools to PATH       
         run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
+      - name: Restore dependencies
+        run: dotnet restore
+
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
