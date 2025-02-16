@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CMS.Application\CMS.Application.csproj" />
     <ProjectReference Include="..\CMS.Core\CMS.Core.csproj" />
   </ItemGroup>
