@@ -1,0 +1,261 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "CMSDatabaseContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "CMS.Infrastructure.Configurations",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[AcronymTriGrams]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Addresses]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Applications]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Articles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContentRelatedLinks]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContentRelatedTerms]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContentRevisionDetails]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContentRevisionFeedbacks]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContentRevisions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Contents]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContentStatus]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContentTitleTriGrams]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContentTypes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CountryCodes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GeoDatas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[HeaderSpiderLists]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[HelpHierarchies]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[HelpPages]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[HelpPhotoes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[HomePages]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ImageMetas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Links]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Logs]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Messages]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MetroCodes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Permissions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PlagiarismDetails]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Plagiarisms]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ProfileOptions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Profiles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ProfileSerials]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Questions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Quotes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[RegionCodes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Roles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SearchLogs]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SearchTypeLogs]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[StyleErrors]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[StyleGuides]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[t_Content_Tag]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[t_ImageTagAssociation1]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[t_User_Tag]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[t_UsersInRole]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TagNameTriGrams]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TagRelatedTags]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tags]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TagSynonyms]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TermOfDays]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Terms]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TermSynonyms]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TutorialDetails]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tutorials]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Users]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ViewDetails]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDatabaseNamesForRoutines": true,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseInternalAccessModifiersForSprocsAndFunctions": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false,
+   "UseT4Split": false
+}

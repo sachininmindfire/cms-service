@@ -1,0 +1,104 @@
+@CMS.Presentation_HostAddress = http://localhost:5098
+
+### Get all articles
+GET {{CMS.Presentation_HostAddress}}/api/articles
+Accept: application/json
+
+###
+
+### Get a specific article by ID
+GET {{CMS.Presentation_HostAddress}}/api/articles/1
+Accept: application/json
+
+###
+
+### Create a new article
+POST {{CMS.Presentation_HostAddress}}/api/articles
+Content-Type: application/json
+
+{
+  "title": "New Article 6",
+  "description": "This is the description of the new article.",
+  "author": "Artee Sharma",
+  "date": "2023-10-01T00:00:00Z",
+  "views": 200,
+  "likes": 100,
+  "comments": [{
+    "commentText": "This is a comment.",
+    "date": "2023-10-01T00:00:00Z",
+    "isActive": true
+  },
+  {
+    "commentText": "This is another comment.",
+    "date": "2023-10-01T00:00:00Z",
+    "isActive": true
+  },
+  {
+    "commentText": "This is third comment.",
+    "date": "2023-10-01T00:00:00Z",
+    "isActive": true
+  }]
+}
+
+###
+
+### Update an existing article
+PUT {{CMS.Presentation_HostAddress}}/api/articles/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Updated Article",
+  "description": "This is the updated description of the article.",
+  "author": "Updated Author Name",
+  "date": "2023-10-01T00:00:00Z",
+  "views": 100,
+  "likes": 10,
+  "comments": []
+}
+
+###
+
+### Delete an article
+DELETE {{CMS.Presentation_HostAddress}}/api/articles/1
+Accept: application/json
+
+###
+
+### Get comments for a specific article
+GET {{CMS.Presentation_HostAddress}}/api/articles/1/comments
+Accept: application/json
+
+###
+
+### Add a comment to a specific article
+POST {{CMS.Presentation_HostAddress}}/api/articles/5/comments
+Content-Type: application/json
+
+{
+  "commentText": "This is a another comment in 5th Article.",
+  "date": "2023-10-01T00:00:00Z",
+  "isActive": true
+}
+
+###
+
+### Update a comment
+PUT {{CMS.Presentation_HostAddress}}/api/articles/1/comments/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "articleId": 1,
+  "commentText": "This is an updated comment.",
+  "date": "2023-10-01T00:00:00Z",
+  "isActive": true
+}
+
+###
+
+### Delete a comment
+DELETE {{CMS.Presentation_HostAddress}}/api/articles/6/comments/6
+Accept: application/json
+
+###
