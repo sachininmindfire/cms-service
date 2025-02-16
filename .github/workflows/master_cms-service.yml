@@ -32,16 +32,18 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
+      - name: Set environment variable
+        env:
+          ASPNETCORE_ENVIRONMENT: Production
+        run: echo "ASPNETCORE_ENVIRONMENT set to $ASPNETCORE_ENVIRONMENT"
+
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
-      - name: Set environment variable
-        env:
-          ASPNETCORE_ENVIRONMENT: Production
-        run: echo "ASPNETCORE_ENVIRONMENT set to $ASPNETCORE_ENVIRONMENT"
+      
 
       - name: Run EF Core Migrations        
         run: dotnet ef database update --project CMS.Infrastructure/CMS.Infrastructure.csproj --startup-project CMS.Presentation/CMS.Presentation.csproj
