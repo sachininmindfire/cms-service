@@ -8,7 +8,7 @@ namespace CMS.Presentation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class ArticlesController : ControllerBase
     {
         private readonly CMSDbContext _context;
