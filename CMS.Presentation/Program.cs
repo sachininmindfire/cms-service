@@ -52,14 +52,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddControllersWithViews();
 
 var dbServer = builder.Configuration["CMS-DbServer"];
-var dbName = builder.Configuration["CMS-DbName"];
+/*var dbName = builder.Configuration["CMS-DbName"]*/;
 var dbUsername = builder.Configuration["CMS-DbUserName"];
 var dbPassword = builder.Configuration["CMS-DbPassword"];
 
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     .Replace("{CMS-DbServer}", dbServer)
-    .Replace("{CMS-DbName}", dbName)
+    //.Replace("{CMS-DbName}", dbName)
     .Replace("{CMS-DbUserName}", dbUsername)
     .Replace("{CMS-DbPassword}", dbPassword);
 
