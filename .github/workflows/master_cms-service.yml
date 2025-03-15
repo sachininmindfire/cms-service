@@ -45,10 +45,10 @@ jobs:
 
       
 
-      # - name: Run EF Core Migrations  
-      #   env:
-      #       ASPNETCORE_ENVIRONMENT: Production  
-      #   run: dotnet ef database update --project CMS.Infrastructure/CMS.Infrastructure.csproj --startup-project CMS.Presentation/CMS.Presentation.csproj
+      - name: Run EF Core Migrations  
+        env:
+            ASPNETCORE_ENVIRONMENT: Production  
+        run: dotnet ef database update --project CMS.Infrastructure/CMS.Infrastructure.csproj --startup-project CMS.Presentation/CMS.Presentation.csproj
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
