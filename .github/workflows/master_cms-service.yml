@@ -48,7 +48,7 @@ jobs:
       - name: Run EF Core Migrations  
         env:
             ASPNETCORE_ENVIRONMENT: Production
-            ConnectionStrings__DefaultConnection: ${{ secrets.ConnectionStrings__DefaultConnection }}
+            ConnectionStrings__DefaultConnection: ${{ secrets.CONNECTIONSTRINGS__DEFAULTCONNECTION_CMSSERVICE }}
         run: dotnet ef database update --project CMS.Infrastructure/CMS.Infrastructure.csproj --startup-project CMS.Presentation/CMS.Presentation.csproj
 
       - name: Upload artifact for deployment job
